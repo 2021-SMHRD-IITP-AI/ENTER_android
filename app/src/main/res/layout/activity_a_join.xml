@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    tools:context=".A_Join">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="415dp"
+        android:layout_height="124dp"
+        android:background="#2196f3"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="412dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/enter_logo" />
+
+    <ScrollView
+        android:layout_width="388dp"
+        android:layout_height="513dp"
+        android:layout_marginTop="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:elevation="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:text="회원가입"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="100px"
+                android:text="아이디입력"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/edt_id"
+                android:layout_width="288dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="10px"
+                android:layout_marginEnd="150px"
+                android:layout_marginRight="150px"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="아이디를 입력해주세요"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="244dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10px"
+                android:text="이름"
+                android:textColor="#040404"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="288dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="10px"
+                android:layout_marginEnd="150px"
+                android:layout_marginRight="150px"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="이름(실명)을 입력해주세요"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="244dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10px"
+                android:text="비밀번호"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/edt_pw1"
+                android:layout_width="288dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="10px"
+                android:layout_marginEnd="150px"
+                android:layout_marginRight="150px"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="비밀번호를 입력해주세요"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="244dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10px"
+                android:text="비밀번호확인"
+                android:textColor="#070707"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/edt_pw2"
+                android:layout_width="288dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="10px"
+                android:layout_marginEnd="150px"
+                android:layout_marginRight="150px"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="비밀번호를 다시 입력해주세요"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="244dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10px"
+                android:text="핸드폰 번호"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/edt_tel"
+                android:layout_width="288dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="10px"
+                android:layout_marginEnd="150px"
+                android:layout_marginRight="150px"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="핸드폰 번호를 입력해주세요"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="244dp" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10px"
+                android:text="주소"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="211dp" />
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="288dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="100px"
+                android:layout_marginLeft="10px"
+                android:layout_marginEnd="150px"
+                android:layout_marginRight="150px"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="주소를 입력해주세요"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.439"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="DuplicateIds"
+                tools:layout_editor_absoluteY="244dp" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="263dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="회원가입"
+                android:textSize="16sp"
+                app:backgroundTint="#3498DB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="407dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

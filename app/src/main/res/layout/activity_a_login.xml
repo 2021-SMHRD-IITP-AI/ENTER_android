@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+    tools:context=".A_Login">
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#2196f3"
+        tools:ignore="MissingConstraints"></View>
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="411dp"
+        android:layout_height="144dp"
+        app:srcCompat="@drawable/enter_logo" />
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="594dp"
+        android:background="@drawable/border"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="128dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="로그인"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="100px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="100px"
+            android:text="아이디입력"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="211dp" />
+
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="288dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="100px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="15px"
+            android:layout_marginEnd="150px"
+            android:layout_marginRight="150px"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="아이디를 입력하세요"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="244dp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="100px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="15px"
+            android:text="비밀번호입력"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.169"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteY="211dp" />
+
+
+        <EditText
+            android:id="@+id/edt_pw1"
+            android:layout_width="288dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="100px"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="15px"
+            android:layout_marginEnd="150px"
+            android:layout_marginRight="150px"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="비밀번호를 입력하세요"
+            android:inputType="textPersonName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.439"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="DuplicateIds"
+            tools:layout_editor_absoluteY="244dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="263dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="150px"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="100px"
+            android:layout_marginEnd="150px"
+            android:layout_marginRight="150px"
+            android:gravity="center"
+            android:text="로그인"
+            android:textSize="16sp"
+            app:backgroundTint="#3498DB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="407dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="회원가입"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="   /  아이디 찾기  /   "
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="비밀번호 찾기"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

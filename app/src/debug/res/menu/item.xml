@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:id="@+id/page1"
+        android:icon="@drawable/ic_home2"
+        />
+    <item
+        android:title="게시판"
+        android:id="@+id/page2"
+        android:icon="@drawable/ic_list"
+        />
+    <item
+        android:title="이용내역"
+        android:id="@+id/page3"
+        android:icon="@drawable/ic_my"
+        />
+    <item
+        android:title="My Page"
+        android:id="@+id/page4"
+        android:icon="@drawable/ic_use"
+        />
+
+
+</menu>
